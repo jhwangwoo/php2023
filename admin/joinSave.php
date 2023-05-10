@@ -55,7 +55,7 @@
                         <div class="over">
                             <label for="youNick" class="required">닉네임</label>
                             <input type="text" id="youNick" name="youNick" class="inputStyle" placeholder="닉네임을 적어주세요!" required>
-                            <a href="#c" class="youCheck">닉네임 중복검사</a>
+                            <a href="#c" class="youCheck" onclick="nickChecking()">닉네임 중복검사</a>
                             <p class="msg" id="youNickComment"><!--닉네임 존재합니다.--></p>
                         </div>
                         <div>
@@ -92,6 +92,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
         let isEmailCheck = false;
+        let isNickCheck = false;
         function emailChecking(){
             let youEmail = $("#youEmail").val();
 
@@ -123,6 +124,34 @@
             }
         }
 
+        function nickChecking(){
+            let youNick = $("#youNick").val();
+            if(youNick == null || youNick == ''){
+                $("#youNickComment").text("* 닉네임을 입력해주세요!");
+            } else {
+                $.ajax({
+                    type : "POST",
+                    url: "joinCheck.php",
+                    data: {"youNick": youNick, "type": "isNickCheck"},
+                    dataType: "json",
+                    success : function(data){
+                        if(data.result == "good"){
+                            $("#youNickComment").text("* 사용 가능한 닉네임 입니다");
+                            isNickCheck = true;
+                        } else {
+                            $("#youNickComment").text("* 이미 존재하는 닉네임 입니다");
+                            isNickCheck = false;
+                        }
+                    },
+                    error : function(request, status, error){
+                        console.log("request" + request);
+                        console.log("status" + status);
+                        console.log("error" + error);
+                    }
+                })
+            }
+        }
+        
         function joinChecks(){
             //이름 유효성 검사
             if($("#youName").val() == ''){
