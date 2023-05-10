@@ -1,0 +1,255 @@
+/* board__inner */
+    /* board__search
+       board__table
+       board__pages
+       board__view
+       board__btn
+       board__write
+     */
+.board__inner {
+
+}
+
+.board__search {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 120px;
+}
+.board__search .left {
+    width: 40%;
+}
+.board__search .left em {
+    color: red;
+}
+.board__search .right {
+    width: 60%;
+    text-align: right;
+}
+.board__search .right input {
+    border: 0;
+    background-color: var(--color__white);
+    padding: 9px 30px;
+    border-radius: 5px;
+    height: 40px;
+}
+.board__search .right select {
+    bottom: 0;
+    width: 95px;
+    height: 40px;
+    padding: 11px;
+    border-radius: 5px;
+    vertical-align: -3px;
+}
+.board__table {
+    margin-top: 10px;
+    margin-bottom: 60px;
+    border-top: 2px solid var(--color__black);
+    border-bottom: 2px solid var(--color__black);
+    text-align: center;
+}
+.board__table table th {
+   background-color: var(--bg__gray2);
+   border-bottom:  1px solid var(--color__black);   
+   padding: 15px 5px;
+   font-weight: 500;
+}
+.board__table table tr:hover {
+    background-color: var(--bg__gray2);
+} 
+.board__table table td {
+    padding: 15px 5px;
+    border-bottom:  1px solid var(--color__black);   
+}
+.board__table table td a:hover {
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.board__pages {
+    margin-bottom: 100px;
+}
+
+.board__pages ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.board__pages li a {
+    border: 1px solid var(--bg__gray3);
+    padding: 10px 13px;
+    margin-left: -1px;
+}
+.board__pages li:hover a{
+    background-color: var(--bg__gray2);
+}
+.board__pages li.active a {
+    background-color: var(--color__black);
+    color: var(--color__white);
+}
+
+.board__view {
+    border-top: 2px solid var(--color__black);
+    border-bottom: 2px solid var(--color__black);
+    margin-top: 40px;
+}
+.board__view table td ,
+.board__view table th {
+    padding: 15px;
+    border-bottom:  1px solid var(--color__black);   
+}
+.board__view table tr:last-child td {
+    height: 500px;
+    vertical-align: top; /*글자를 위로*/
+}
+
+.board__view table th {
+    background-color: var(--bg__gray2);
+    font-weight: 500;
+}
+.board__btn {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.board__write {
+    padding: 50px 0 100px;
+}
+.board__write label {
+    width: 100%;
+    font-style: 20px;
+    display: block;
+    margin-bottom: 10px;
+}
+.board__write input {
+    margin-bottom: 50px;
+}
+.board__write textarea {
+    padding: 2em;
+    resize: none;
+}
+.board__write button {
+    float: right;
+    margin-top: 10px;
+}
+
+/* .board__inner .board_ti {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: flex-end;
+    
+}
+.board__inner .board_ti button {
+    cursor: pointer;
+    width: 100px; 
+    height: 40px; 
+    background-color: #fff; 
+    border-radius: 10px;
+}
+.board__inner .board_ti div:nth-child(1) {
+    width: 52%;
+}
+.board__inner .board_ti div:nth-child(2) input {
+    margin-right:  5px;
+    width: 270px; 
+    height: 40px; 
+    border-radius: 10px; 
+    border: 1px solid #fff;
+}
+.board__inner .board_ti div:nth-child(2) select {
+    width: 100px;
+    height: 40px; 
+    background-color: #fff; 
+    border-radius: 10px;
+    margin-right: 5px;
+    text-align: center;
+}
+.board__inner .board_ti div:nth-child(3) {
+    width: 100px;
+    height: 40px; 
+    background-color: #fff; 
+    border-radius: 10px;
+    line-height: 40px;
+    text-align: center;
+    margin-left: 5px ;
+}
+/* board__form */
+/* .board__form {
+}
+
+span.red{
+    color: red;
+}
+
+.board_title {
+    padding: 20px 0;
+
+}
+.board__form  fieldset { */
+    /* display: flex; */
+    /* justify-content: space-between;
+    
+}
+
+.board_ti {
+    display: flex;
+}
+.board_title table {
+    width: 100%;
+    text-align: center;
+    border-spacing : 0;
+    border-collapse : collapse;
+}
+.board_title  tr {
+    height: 55px;
+}
+.board_title thead tr {
+    background-color: #CACACA;
+    border-bottom: 1px solid #000;
+    border-top: 2px solid #000;
+}
+.board_title thead th:nth-of-type(2){
+    width: 800px;
+}
+.board_title tbody tr {
+    border-bottom: 1px solid #000;
+}
+.board_title .list {
+    margin-top: 70px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.board_title .list {
+    margin-top: 70px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.board_title  .list button {
+    border: 1px solid #cacaca;
+    width: 36px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 95px;
+    cursor: pointer;
+}
+.board_title  .list button:first-child {
+    width: 80px;
+}
+.board_title  .list button:nth-child(2){
+    width: 60px;
+}
+.board_title  .list button:nth-child(3){
+    background-color: #000;
+    color: #fff;
+}
+.board_title  .list button:nth-child(11){
+    width: 60px;
+}
+.board_title  .list button:last-child {
+    width: 90px;
+} */

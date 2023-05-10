@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP 블로그 만들기</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- SCRIPT -->
+    <script defer src="assets/js/common.js"></script>
+    
+</head>
+<body class="gray">
+    
+    <div id="skip">
+        <a href="#header">헤더 영역 바로가기</a>
+        <a href="#main">컨텐츠 영역 바로가기</a>
+        <a href="#footer">푸터 영역 바로가기</a>
+    </div>
+    <!-- //skip -->
+
+    <header id="header">
+        <div class="header__inner container">
+            <div class="left">
+                <a href="../index.html" class="star">
+                    <span class="blind">메인으로</span>
+                </a>
+            </div>
+            <h1 class="logo">
+                <a href="main.html">Developer Blog</a>
+            </h1>
+            <div class="right">
+                <ul>
+                    <li><a href="join.html">회원가입</a></li>
+                </ul>
+            </div>
+        </div>
+        <nav class="nav__inner">
+            <ul>
+                <li><a href="join.html">회원가입</a></li>
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="board.html">게시판</a></li>
+                <li><a href="#">블로그</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- //header -->
+
+    <main id="main" class="container">
+        <div class="intro__inner bmStyle">
+            <picture class="intro__images">
+                <source srcset="assets/img/intro01.png, assets/img/intro01@2x.png 2x, assets/img/intro01@3x.png 3x" />
+                <img src="assets/img/intro01.png" alt="소개이미지">
+            </picture> 
+            <p class="intro__text">
+                어떤 일이라도 노력하고 즐기면 그 결과는 빛을 바란다고 생각합니다.
+                신입의 열정과 도전정신을 깊숙히 새기며 배움에 있어 겸손함을 
+                유지하며 세부적인 곳까지 파고드는 개발자가 되겠습니다.
+            </p>
+        </div>
+        <!-- intro__inner -->
+
+        <!--
+        div class="intro__images"></div> 각 페이지 소개 배너
+        <div class="join__inner"></div> 회원가입 페이지
+        <div class="login__inner"></div> 로그인 페이지
+        <div class="board__inner"></div> 게시판 페이지
+        
+        <div class="sliders__inner"></div>
+        <div class="banners__inner"></div>
+        <div class="cards__inner"></div>
+        <div class="images__inner"></div>
+        <div class="ads__inner"></div>
+        <div class="texts__inner"></div>
+        <div class="bolg__inner"></div> -->
+    </main>
+    <!-- //main -->
+
+    <footer id="footer">
+        <div class="footer__inner btStyle mb100 container">
+            <div>Copyrigt @2023 ghkddn132</div>
+            <div>blg by ghkddn132</div>
+        </div>
+    </footer>
+    <!-- //footer -->
+</body>
+</html>
