@@ -94,10 +94,26 @@
         let isEmailCheck = false;
         let isNickCheck = false;
         function emailChecking(){
+            // 이메일 유효성 검사
+            if($("#youEmail").val() == ''){
+                $("#youEmailComment").text("* 이메일을 입력해주세요!");
+                $("#youEmail").focus();
+                return false;
+            }
+            let getYouEmail =  RegExp(/^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([\-.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i);
+
+            if(!getYouEmail.test($("#youEmail").val())){
+                $("#youEmailComment").text("* 이메일 형식에 맞게 작성해주세요!");
+                $("#youEmail").val('');
+                $("#youEmail").focus();
+                return false;
+            }
+
             let youEmail = $("#youEmail").val();
 
             if(youEmail == null || youEmail == ''){
                 $("#youEmailComment").text("* 이메일을 입력해주세요");
+            
             }else {
                 $.ajax({
                     type : "POST",
@@ -125,6 +141,19 @@
         }
 
         function nickChecking(){
+            // 닉네임 유효성 검사 
+            if($("#youNick").val() == ''){
+                $("#youNickComment").text("* 닉네임을 입력해주세요!");
+                $("#youNick").focus();
+                return false;
+            }
+            let getYouNick = RegExp(/^[가-힣|0-9]+$/);
+            if(!getYouNick.test($("#youNick").val())){
+                $("#youNickComment").text("* 닉네임은 한글 또는 숫자만 사용 가능합니다.");
+                $("#youNick").val('');
+                $("#youNick").focus();
+                return false;
+            }
             let youNick = $("#youNick").val();
             if(youNick == null || youNick == ''){
                 $("#youNickComment").text("* 닉네임을 입력해주세요!");
@@ -167,33 +196,6 @@
                 return false;
             }
 
-            // 이메일 유효성 검사
-            if($("#youEmail").val() == ''){
-                $("#youEmailComment").text("* 이메일을 입력해주세요!");
-                $("#youEmail").focus();
-                return false;
-            }
-            let getYouEmail =  RegExp(/^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i);
-            if(!getYouEmail.test($("#youEmail").val())){
-                $("#youEmailComment").text("* 이메일 형식에 맞게 작성해주세요!");
-                $("#youEmail").val('');
-                $("#youEmail").focus();
-                return false;
-            }
-
-            // 닉네임 유효성 검사 
-            if($("#youNick").val() == ''){
-                $("#youNickComment").text("* 닉네임을 입력해주세요!");
-                $("#youNick").focus();
-                return false;
-            }
-            let getYouNick = RegExp(/^[가-힣|0-9]+$/);
-            if(!getYouNick.test($("#youNick").val())){
-                $("#youNickComment").text("* 닉네임은 한글 또는 숫자만 사용 가능합니다.");
-                $("#youNick").val('');
-                $("#youNick").focus();
-                return false;
-            }
 
             // 비밀번호 유효성 검사
             if($("#youPass").val() == ''){

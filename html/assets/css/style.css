@@ -19,5 +19,8 @@
 /* login */
 @import "login.css";
 
+/* blog */
+@import "blog.css";
+
 /* board */
 @import "board.css"
