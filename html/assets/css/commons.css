@@ -53,6 +53,28 @@ body.windows {
 .mt60 {margin-top: 60px !important;}
 .mt70 {margin-top: 70px !important;}
 
+.ml10 {margin-left: 10px !important;}
+.ml20 {margin-left: 20px !important;}
+.ml30 {margin-left: 30px !important;}
+.ml40 {margin-left: 40px !important;}
+.ml50 {margin-left: 50px !important;}
+.ml60 {margin-left: 60px !important;}
+.ml70 {margin-left: 70px !important;}
+.ml80 {margin-left: 80px !important;}
+.ml90 {margin-left: 90px !important;}
+.ml100 {margin-left: 100px !important;}
+
+.mr10 {margin-right: 10px !important;}
+.mr20 {margin-right: 20px !important;}
+.mr30 {margin-right: 30px !important;}
+.mr40 {margin-right: 40px !important;}
+.mr50 {margin-right: 50px !important;}
+.mr60 {margin-right: 60px !important;}
+.mr70 {margin-right: 70px !important;}
+.mr80 {margin-right: 80px !important;}
+.mr90 {margin-right: 90px !important;}
+.mr100 {margin-right: 100px !important;}
+
 .mb10 {margin-bottom: 10px !important;}
 .mb20 {margin-bottom: 20px !important;}
 .mb30 {margin-bottom: 30px !important;}
@@ -60,9 +82,9 @@ body.windows {
 .mb50 {margin-bottom: 50px !important;}
 .mb60 {margin-bottom: 60px !important;}
 .mb70 {margin-bottom: 70px !important;}
-.mb80 {margin-bottom: 70px !important;}
-.mb90 {margin-bottom: 70px !important;}
-.mb100 {margin-bottom: 70px !important;}
+.mb80 {margin-bottom: 80px !important;}
+.mb90 {margin-bottom: 90px !important;}
+.mb100 {margin-bottom: 100px !important;}
 
 
 
@@ -119,7 +141,7 @@ body.windows {
     cursor: pointer;
 }
 .btnStyle2 {
-    width: 30%;
+    width: 100%;
     font-size: 1.2rem;
     background-color: var(--color__black);
     color: var(--color__white);
@@ -151,6 +173,15 @@ body.windows {
     text-align: center;
     cursor: pointer;
 } 
+.btnStyle5 { /*기본 버튼 스타일*/
+    border: 1px solid var(--color__black);
+    border-radius: 20px;
+    padding: 2px 10px;
+} 
+.btnStyle5:hover {
+    background-color:var(--color__black);
+    color: var(--color__white);
+}
 
 
     
