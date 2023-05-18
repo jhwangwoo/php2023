@@ -45,158 +45,40 @@
                 <div class="blog__wrap">
                     <h2>All Post</h2>
                     <div class="cards__inner col2 line2">
-                        <div class="card">
-                            <figure class="card__img">
-                                <source srcset="../assets/img/blog01.png, ../assets/img/blog01@2x.png 2x, ../assets/img/blog07@3x.png 3x" />
-                                <img src="../assets/img/blog01.jpg" alt="소개이미지">
-                            </figure>
-                            <div class="card__title">
-                                <h3>코딩 기본 사항에 대한 자습서</h3>
-                                <p>코딩을 처음 접하는 경우 변수, 조건문, 반복문과 같은 코딩의 기초를 이해하는 것이 중요합니다. 자습서는 이러한 개념을 설명하고 코딩의 기초를 배우는 방법을 단계별로 안내합니다.</p>
-                            </div>
-                            <div class="card__info">
-                                <span class="author">정황우</span>
-                                <span class="date">2023.05.11</span>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <figure class="card__img">
-                                <source srcset="../assets/img/blog02.png, ../assets/img/blog02@2x.png 2x, ../assets/img/blog02@3x.png 3x" />
-                                <img src="../assets/img/blog02.jpg" alt="소개이미지">
-                            </figure>
-                            <div class="card__title">
-                                <h3>코딩 문제 해결에 대한 팁과 트릭</h3>
-                                <p>코딩을 하다 보면 문제가 발생할 수 있습니다. 이러한 팁과 트릭은 문제를 해결하는 데 도움이 됩니다. 여기에는 디버깅, 오류 추적 및 문제 해결 방법에 대한 팁이 포함됩니다.</p>
-                            </div>
-                            <div class="card__info">
-                                <span class="author">정황우</span>
-                                <span class="date">2023.05.11</span>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <figure class="card__img">
-                                <source srcset="../assets/img/blog05.png, ../assets/img/blog05@2x.png 2x, ../assets/img/blog05@3x.png 3x" />
-                                <img src="../assets/img/blog05.jpg" alt="소개이미지">
-                            </figure>
-                            <div class="card__title">
-                                <h3>코딩 경력에 대한 조언</h3>
-                                <p>코딩 경력에 관심이 있다면 조언을 찾을 수 있는 좋은 출처가 많이 있습니다. 이러한 블로그 게시물은 취업 면접 기술, 이력서 작성 방법 및 경력 개발에 대한 팁을 제공합니다.</p>
-                            </div>
-                            <div class="card__info">
-                                <span class="author">정황우</span>
-                                <span class="date">2023.05.11</span>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <figure class="card__img">
-                                <source srcset="../assets/img/blog07.png, ../assets/img/blog07@2x.png 2x, ../assets/img/blog07@3x.png 3x" />
-                                <img src="../assets/img/blog01.jpg" alt="소개이미지">
-                            </figure>
-                            <div class="card__title">
-                                <h3>코딩 기본 사항에 대한 자습서</h3>
-                                <p>코딩을 처음 접하는 경우 변수, 조건문, 반복문과 같은 코딩의 기초를 이해하는 것이 중요합니다. 자습서는 이러한 개념을 설명하고 코딩의 기초를 배우는 방법을 단계별로 안내합니다.</p>
-                            </div>
-                            <div class="card__info">
-                                <span class="author">정황우</span>
-                                <span class="date">2023.05.11</span>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <figure class="card__img">
-                                <source srcset="../assets/img/blog06.png, ../assets/img/blog06@2x.png 2x, ../assets/img/blog02@3x.png 3x" />
-                                <img src="../assets/img/blog06.jpg" alt="소개이미지">
-                            </figure>
-                            <div class="card__title">
-                                <h3>코딩 문제 해결에 대한 팁과 트릭</h3>
-                                <p>코딩을 하다 보면 문제가 발생할 수 있습니다. 이러한 팁과 트릭은 문제를 해결하는 데 도움이 됩니다. 여기에는 디버깅, 오류 추적 및 문제 해결 방법에 대한 팁이 포함됩니다.</p>
-                            </div>
-                            <div class="card__info">
-                                <span class="author">정황우</span>
-                                <span class="date">2023.05.11</span>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <figure class="card__img">
-                                <source srcset="../assets/img/blog03.png, ../assets/img/blog03@2x.png 2x, ../assets/img/blog05@3x.png 3x" />
-                                <img src="../assets/img/blog03.jpg" alt="소개이미지">
-                            </figure>
-                            <div class="card__title">
-                                <h3>코딩 경력에 대한 조언</h3>
-                                <p>코딩 경력에 관심이 있다면 조언을 찾을 수 있는 좋은 출처가 많이 있습니다. 이러한 블로그 게시물은 취업 면접 기술, 이력서 작성 방법 및 경력 개발에 대한 팁을 제공합니다.</p>
-                            </div>
-                            <div class="card__info">
-                                <span class="author">정황우</span>
-                                <span class="date">2023.05.11</span>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <figure class="card__img">
-                                <source srcset="../assets/img/blog04.png, ../assets/img/blog04@2x.png 2x, ../assets/img/blog07@3x.png 3x" />
-                                <img src="../assets/img/blog04.jpg" alt="소개이미지">
-                            </figure>
-                            <div class="card__title">
-                                <h3>코딩 기본 사항에 대한 자습서</h3>
-                                <p>코딩을 처음 접하는 경우 변수, 조건문, 반복문과 같은 코딩의 기초를 이해하는 것이 중요합니다. 자습서는 이러한 개념을 설명하고 코딩의 기초를 배우는 방법을 단계별로 안내합니다.</p>
-                            </div>
-                            <div class="card__info">
-                                <span class="author">정황우</span>
-                                <span class="date">2023.05.11</span>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <figure class="card__img">
-                                <source srcset="../assets/img/blog02.png, ../assets/img/blog02@2x.png 2x, ../assets/img/blog02@3x.png 3x" />
-                                <img src="../assets/img/blog02.jpg" alt="소개이미지">
-                            </figure>
-                            <div class="card__title">
-                                <h3>코딩 문제 해결에 대한 팁과 트릭</h3>
-                                <p>코딩을 하다 보면 문제가 발생할 수 있습니다. 이러한 팁과 트릭은 문제를 해결하는 데 도움이 됩니다. 여기에는 디버깅, 오류 추적 및 문제 해결 방법에 대한 팁이 포함됩니다.</p>
-                            </div>
-                            <div class="card__info">
-                                <span class="author">정황우</span>
-                                <span class="date">2023.05.11</span>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <figure class="card__img">
-                                <source srcset="../assets/img/blog08.png, ../assets/img/blog08@2x.png 2x, ../assets/img/blog05@3x.png 3x" />
-                                <img src="../assets/img/blog08.jpg" alt="소개이미지">
-                            </figure>
-                            <div class="card__title">
-                                <h3>코딩 경력에 대한 조언</h3>
-                                <p>코딩 경력에 관심이 있다면 조언을 찾을 수 있는 좋은 출처가 많이 있습니다. 이러한 블로그 게시물은 취업 면접 기술, 이력서 작성 방법 및 경력 개발에 대한 팁을 제공합니다.</p>
-                            </div>
-                            <div class="card__info">
-                                <span class="author">정황우</span>
-                                <span class="date">2023.05.11</span>
-                            </div>
-                        </div>
+<?php
+    $sql = "SELECT * FROM blog WHERE blogDelete = 0 ORDER BY blogID DESC";
+    $result = $connect -> query($sql);
+
+    foreach($result as $blog){?>
+        <div class="card">
+            <figure class="card__img">
+                <a href="blogView.php?blogID=<?=$blog['blogID']?>">
+                    <img src="../assets/blog/<?=$blog['blogImgFile']?>" alt="<?=$blog['blogTitle']?>">
+                </a>
+            </figure>
+            <div class="card__title">
+                <h3><?=$blog['blogTitle']?></h3>
+                <p><?=$blog['blogContents']?></p>
+            </div>
+            <div class="card__info">
+                <a href="#" class="more">더보기</a>
+            </div>
+        </div>
+<?php } ?>
                     </div>
                 </div>
             </div>
             <div class="right mt100">
                 <div class="blog__aside">
-                    <div class="intro">
-                        <picture class="img">
-                            <source srcset="../assets/img/intro01.png, ../assets/img/intro01@2x.png 2x, ../assets/img/intro01@3x.png 3x" />
-                            <img src="../assets/img/intro01.png" alt="소개이미지">
-                        </picture> 
-                        <p class="text">
-                            어떤 일이라도 노력하고 즐기면 그 결과는 빛을 바란다고 생각합니다.
-                        </p>
-                    </div>
-                    <div class="cate">
-                        <h4>카테고리</h4>
-                    </div>
-                    <div class="cate">
-                        <h4>최신 글</h4>
-                    </div>
-                    <div class="cate">
-                        <h4>인기 글</h4>
-                    </div>
-                    <div class="cate">
-                        <h4>최신 댓글</h4>
-                    </div>
+<?php include "../include/blogTitle.php"?>
+
+<?php include "../include/blogCate.php"?>
+
+<?php include "../include/blogLatest.php"?>
+
+<?php include "../include/blogPopular.php"?>
+
+<?php include "../include/blogComment.php"?>
                 </div>
             </div>
         </div>

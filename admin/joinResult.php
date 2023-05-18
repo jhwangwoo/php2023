@@ -1,3 +1,18 @@
+<?php
+    include "../connect/connect.php";
+    
+    $adminName = $_POST['youName'];
+    $adminEmail = $_POST['youEmail'];
+    $adminNick = $_POST['youNick'];
+    $adminPass = sha1($_POST['youPass']); //sha1=비번암호화
+    $adminBirth = $_POST['youBirth'];
+    $adminPhone = $_POST['youPhone'];
+    $regTime = time();
+
+    $sql = "INSERT INTO adminMembers(adminEmail, adminName, adminNick, adminPass, adminBirth, adminPhone, adminDelete, adminRegtime, adminModtime) VALUES('$adminEmail', '$adminName', '$adminNick', '$adminPass', '$adminBirth', '$adminPhone', '1', '$regTime', '$regTime')";
+    $connect -> query($sql);
+?>
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>

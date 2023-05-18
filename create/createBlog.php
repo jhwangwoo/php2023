@@ -1,5 +1,6 @@
 <?php
     include "../connect/connect.php";
+    
     $sql = "CREATE TABLE blog (";
     $sql .= "blogID int(10) unsigned auto_increment,";
     $sql .= "memberID int(10) unsigned NOT NULL,";
