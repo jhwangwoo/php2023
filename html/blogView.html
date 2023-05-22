@@ -152,9 +152,71 @@
 
         <div class="blog__comment">
             <h3>댓글쓰기</h3>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div class="comment__view">
+                <div class="avatar">
+                    <img src="https://t1.daumcdn.net/tistory_admin/blog/admin/profile_default_06.png" alt="">
+                </div>
+                <div class="info">
+                    <span class="nickname">곰돌이</span>
+                    <span class="date">2023.04.03</span>
+                    <p class="msg">감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다</p>           
+                    <div class="comment__modify">
+                        <label for="msg__modify" class="blind">수정 내용</label>
+                        <textarea name="msg__modify" id="msg__modify" cols rows="4" placeholder="수정할내용을 적어주세요!"></textarea>
+                        <label for="msg__modify" class="blind">비밀번호</label>
+                        <input type="password" id="commentPass" name="commentpass" placeholder="비밀번호">                
+                        <button id="commentModifycancel">취소</button>
+                        <button id="commentModifyButton">수정</button>
+                    </div>
+                    <div class="del">
+                        <a href="#" class="comment__del__del">삭제</a>
+                        <a href="#" class="comment__del__mod">수정</a>
+                    </div>
+                </div>
+            </div>
+            <div class="comment__view">
+                <div class="avatar">
+                    <img src="https://t1.daumcdn.net/tistory_admin/blog/admin/profile_default_06.png" alt="">
+                </div>
+                <div class="info">
+                    <span class="nickname">곰돌이</span>
+                    <span class="date">2023.04.03</span>
+                    <p class="msg">감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다</p>
+                    <div class="del">
+                        <a href="#" class="comment__del__del">삭제</a>
+                        <a href="#" class="comment__del__mod">수정</a>
+                    </div>
+                </div>
+            </div>
+            <div class="comment__view">
+                <div class="avatar">
+                    <img src="https://t1.daumcdn.net/tistory_admin/blog/admin/profile_default_06.png" alt="">
+                </div>
+                <div class="info">
+                    <span class="nickname">곰돌이</span>
+                    <span class="date">2023.04.03</span>
+                    <p class="msg">감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다감사합니다</p>
+                    <div class="comment__delete">
+                        <label for="commentpass" class="blind">비밀번호</label>
+                        <input type="password" id="commentPass" name="commentpass" placeholder="비밀번호">                
+                        <button id="commentDeletecancel">취소</button>
+                        <button id="commentDeleteButton">삭제</button>
+                    </div>
+                    <div class="del">
+                        <a href="#" class="comment__del__del">삭제</a>
+                        <a href="#" class="comment__del__mod">수정</a>
+                    </div>
+                </div>
+            </div>
+            <div class="comment__write">
+                <label for="">비밀번호</label>
+                <input type="password" id="commentPass" name="commentpass" placeholder="비밀번호">
+                <label for="">이름</label>
+                <input type="text" id="commentName" name="commentName" placeholder="이름">
+                <label for="">댓글쓰기</label>
+                <textarea id="commentWrite" name="commentWrite" rows="4" placeholder="댓글을써주세요"></textarea>
+                <button type="submit" class="btnStyle3 mt10">댓글쓰기</button>
+            </div>
         </div>
         <!-- //blog__comment -->
     </main>

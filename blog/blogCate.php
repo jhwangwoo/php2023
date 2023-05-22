@@ -70,7 +70,7 @@
 
                     <?php include "../include/blogCate.php"?>
 
-                    <?php include "../include/blogLatest.php"?>
+                    <?php include "../include/blogNew.php"?>
 
                     <?php include "../include/blogPopular.php"?>
 

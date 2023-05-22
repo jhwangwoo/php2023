@@ -81,6 +81,50 @@
 .blog__aside .cate ul li:hover::before{
     border-radius: 50%;
 }
+.blog__aside .cate.list2 li {
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.blog__aside .cate.list2 li::before {
+    width: 0;
+    height: 0;
+}
+.blog__aside .cate.list2 li a {
+    display: flex;
+}
+.blog__aside .cate.list2 li a img {
+    width: 100px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+}
+.blog__aside .cate.list2 li a span {
+    white-space: nowrap; /* 텍스트 줄바꿈 방지 */
+    overflow: hidden; /* 요소 내부의 내용이 넘칠 경우 숨김 처리 */
+    text-overflow: ellipsis; /* 잘리는 부분에 말 줄임표(...) 표시 */
+}
+
+.blog__aside .cate ul li:hover::before{
+    border-radius: 50%;
+}
+.blog__aside .cate.list2 li {
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.blog__aside .cate.list2 li::before {
+    width: 0;
+    height: 0;
+}
+.blog__aside .cate.list2 li a {
+    display: flex;
+}
+.blog__aside .cate.list2 li a img {
+    width: 100px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+}
+.blog__aside .cate.list2 li a span {}
 
 
 
@@ -152,7 +196,6 @@
     background-color: rgba(0,0,0,0.3);
     backdrop-filter: blur(10px);
     z-index: -1;
-
 }
 .blog__title .cate {
     background-color: var(--color__white);
@@ -194,6 +237,21 @@
     padding: 0 4px 2px 4px;
     margin-bottom: 40px;
 }
+.blog__article ul {
+    display: flex;
+}
+.blog__article ul li {
+    width: 24.999%;
+}
+.blog__article ul li a {}
+.blog__article ul li span {
+    overflow: hidden; /* 요소 내부의 내용이 넘칠 경우 숨김 처리 */
+}
+.blog__article ul li img {
+    width: 280px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+}
 
 /* blog__comment */
 .blog__comment {
@@ -206,6 +264,109 @@
     background-color: var(--color__black);
     color: var(--color__white);
     padding: 0 4px 2px 4px;
+    margin-bottom: 10px;
+}
+.comment__write fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+.comment__write label {
+    text-indent: -9999px;
+    display: none;
+}
+.comment__write input {
+    width: 49.5%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: transparent;
+}
+.comment__write textarea {
+    width: 100%;
+    min-height: 100px;
+    resize: none;
+    border: 1px solid #ccc;
+    background-color: transparent;
+    padding: 10px;
+    margin-top: 10px;
+}
+.comment__view {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+.comment__view .avatar {
+    width: 50px;
+    border-radius: 100px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+.comment__view .info {
+    width: calc(100% - 60px);
+}
+.comment__view .info .nickname {
+    font-size: 1.6em;
+    color: #000;
+}
+.comment__view .info  .date {
+    color: #aeaeae;
+    font-weight: 100;
+}
+.comment__view .info  .msg {
+    color: #666;
+}
+.comment__view .info .del {
+    text-align: right;
+
+}
+.comment__view .info .del a {
+    color: #8c8c8c;
+}
+.comment__view .info .del a:hover {
+    color: #8c8c8c;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.comment__delete {
+    margin-top: 10x;
+}
+.comment__delete input {
+    border: 1px solid #a4a4a4;
+    background-color: #f5f5f5;
+    padding: 10px;
+}
+.comment__delete button {
+    border: 1px solid #a4a4a4;
+}
+.comment__delete button:last-child {
+    background-color: #d6d6d6;
+}
+.comment__modify {}
+.comment__modify textarea {
+    width: 100%;
+    resize: none;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+.comment__modify input {
+    border: 1px solid #a4a4a4;
+    background-color: #f5f5f5;
+    padding: 10px;
+}
+.comment__modify button {
+    border: 1px solid #a4a4a4;
+}
+.comment__modify button:last-child {
+    background-color: #d6d6d6;
+}
+
+.blog__contents h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
 }
 
 .cards__inner {
