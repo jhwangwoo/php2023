@@ -65,10 +65,14 @@
                             <td></td>
                         </tr> -->
 <?php
-    $boardID = $_GET['boardID'];
-    //보드 뷰 + 1(조회수)
-    $sql = "UPDATE board SET boardView = boardView + 1 WHERE boardID = {$boardID}";
-    $connect -> query($sql);
+    if(isset($_GET['boardID'])) { //isset은 변수가 설정되어 있으면 true를, 그렇지 않으면 false를 반환합니다
+        $boardID = $_GET['boardID'];
+        //보드 뷰 + 1(조회수)
+        $sql = "UPDATE board SET boardView = boardView + 1 WHERE boardID = {$boardID}";
+        $connect -> query($sql);
+    } else {
+        echo "<tr><td colsapn='4'>게시글이 없습니다.</td></tr>";
+    }
 
     
     if(isset($_GET['boardID'])) { //isset은 변수가 설정되어 있으면 true를, 그렇지 않으면 false를 반환합니다
@@ -111,7 +115,7 @@
                 echo "<a style='margin-right: 5px;' href='boardModify.php?boardID={$_GET['boardID']}' class='btnStyle3'>수정하기</a>";
                 echo "<a href='boardRemove.php?boardID={$_GET['boardID']}' class='btnStyle3' onclick=\"return confirm('정말 삭제 하겠습니까?')\">삭제하기</a>";
             } else {
-                echo "알수없는 오류입니다. 운영자에게 말해주세요";
+                echo "";
             }
         }    
     }

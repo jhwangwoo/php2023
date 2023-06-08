@@ -11,8 +11,6 @@
     $sql .= "PRIMARY KEY (memberID)";
     $sql .= ") charset=utf8;";
 
-
-    
     $result = $connect -> query($sql);
 
     if($result){

@@ -8,16 +8,20 @@
         Header("Location: blog.php");
     }
 
-    $blogNew = "SELECT * FROM blog WHERE blogDelete = 0 AND blogCategory = (SELECT blogCategory FROM blog WHERE blogID = $blogID) ORDER BY RAND() DESC LIMIT 4";
+    $blogNew = "SELECT * FROM blogs WHERE blogDelete = 0 AND blogCategory = (SELECT blogCategory FROM blogs WHERE blogID = $blogID) ORDER BY RAND() DESC LIMIT 4";
     $blogNewResult = $connect -> query($blogNew);
 
     foreach($blogNewResult as $blog){ ?>
-        <li>
-            <a href="blogView.php?blogID=<?=$blog['blogID']?>">
-                <img src="../assets/blog/<?=$blog['blogImgFile']?>" alt="<?=$blog['blogTitle']?>">
-                <span><?=$blog['blogTitle']?></span>
-            </a>
-        </li>
-    <?php }?>
+
+        <div class="card">
+            <figure class="card__img">
+                <source srcset="assets/img/blog04.png, assets/img/blog04@2x.png 2x, assets/img/blog04@3x.png 3x" />
+                <a href="blogView.php?blogID=<?=$blog['blogID']?>" class="more"><img src="../assets/blog/<?=$blog['blogImgFile']?>" alt="<?=$blog['blogTitle']?>"></a>
+            </figure>
+            <div class="card__title">
+                <h3><?=$blog['blogTitle']?></h3>
+            </div>
+        </div>
+<?php }?>
     </ul>
 </div>

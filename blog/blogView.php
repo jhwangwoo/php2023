@@ -19,16 +19,16 @@
             Header("Location: blog.php");
         }
 
-        $sql = "UPDATE blog SET blogView = blogView + 1 WHERE blogID = {$blogID}";
+        $sql = "UPDATE blogs SET blogView = blogView + 1 WHERE blogID = {$blogID}";
         $connect -> query($sql);
 
-        $blogSql = "SELECT * FROM blog WHERE blogID = '$blogID'";
+        $blogSql = "SELECT * FROM blogs WHERE blogID = '$blogID'";
         $blogResult = $connect -> query($blogSql);
         $blogInfo = $blogResult -> fetch_array(MYSQLI_ASSOC);
 
-        $commentSql = "SELECT * FROM blogComment WHERE blogID = '$blogID' AND commentDelete = '0' ORDER BY commentID DESC";
-        $commentResult = $connect -> query($commentSql);
-        $commenInfo = $commentResult -> fetch_array(MYSQLI_ASSOC);
+        $commentsSql = "SELECT * FROM blogsComment WHERE blogID = '$blogID' AND commentDelete = '0' ORDER BY commentID DESC";
+        $commentsResult = $connect -> query($commentsSql);
+        $commenInfo = $commentsResult -> fetch_array(MYSQLI_ASSOC);
 
         // echo "<pre>";
         // var_dump($blogInfo);
@@ -100,15 +100,15 @@
             <h3>댓글쓰기</h3>
 
             <?php 
-                foreach($commentResult as $comment){  ?>                  
-                    <div class="comment__view" id="comment<?=$comment['commentID']?>">
+                foreach($commentsResult as $comments){  ?>                  
+                    <div class="comment__view" id="comment<?=$comments['commentID']?>">
                     <div class="avatar">
                         <img src="https://t1.daumcdn.net/tistory_admin/blog/admin/profile_default_06.png" alt="">
                     </div>
                     <div class="info">
-                        <span class="nickname"><?=$comment['commentName']?></span>
-                        <span class="date"><?=date('Y-m-d', $comment['regTime'])?></span>
-                        <p class="msg"><?=$comment['commentMsg']?></p>
+                        <span class="nickname"><?=$comments['commentName']?></span>
+                        <span class="date"><?=date('Y-m-d', $comments['regTime'])?></span>
+                        <p class="msg"><?=$comments['commentMsg']?></p>
                         <div class="del">
                             <a href="#" class="comment__del__del">삭제</a>
                             <a href="#" class="comment__del__mod">수정</a>

@@ -1,7 +1,7 @@
 <?php
     include "../connect/connect.php";
     
-    $sql = "CREATE TABLE blogComment (";
+    $sql = "CREATE TABLE blogsComment (";
     $sql .= "commentID int(10) unsigned auto_increment,";
     $sql .= "memberID int(10) unsigned,";
     $sql .= "blogID int(10) unsigned,";

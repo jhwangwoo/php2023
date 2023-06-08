@@ -239,16 +239,18 @@
 }
 .blog__article ul {
     display: flex;
+    justify-content: space-between;
 }
 .blog__article ul li {
-    width: 24.999%;
+    width: 24.555%;
 }
 .blog__article ul li a {}
 .blog__article ul li span {
     overflow: hidden; /* 요소 내부의 내용이 넘칠 경우 숨김 처리 */
+    display: block;
 }
 .blog__article ul li img {
-    width: 280px;
+    width: 100%;
     margin-right: 10px;
     border: 1px solid #ccc;
 }

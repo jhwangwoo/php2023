@@ -8,7 +8,7 @@
             Header("Location: blog.php");
         }
 
-        $categorySql = "SELECT * FROM blog WHERE blogDelete = 0 AND blogCategory = '$category' ORDER BY blogID DESC";
+        $categorySql = "SELECT * FROM blogs WHERE blogDelete = 0 AND blogCategory = '$category' ORDER BY blogID DESC";
         $categoryResult = $connect -> query($categorySql);
         $categoryInfo = $categoryResult -> fetch_array(MYSQLI_ASSOC);
         $categoryCount = $categoryResult -> num_rows;

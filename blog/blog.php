@@ -2,9 +2,9 @@
         include "../connect/connect.php";
         include "../connect/session.php";
 
-        echo "<pre>";
-        var_dump($_SESSION);
-        echo "</pre>";
+        // echo "<pre>";
+        // var_dump($_SESSION);
+        // echo "</pre>";
 ?>
 
 <!DOCTYPE html>
@@ -46,7 +46,7 @@
                     <h2>All Post</h2>
                     <div class="cards__inner col2 line2">
 <?php
-    $sql = "SELECT * FROM blog WHERE blogDelete = 0 ORDER BY blogID DESC";
+    $sql = "SELECT * FROM blogs WHERE blogDelete = 0 ORDER BY blogID DESC";
     $result = $connect -> query($sql);
 
     foreach($result as $blog){?>
